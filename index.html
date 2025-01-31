@@ -18,6 +18,11 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fontwossam icon -->
+    <script
+      src="https://kit.fontawesome.com/33021a3a2d.js"
+      crossorigin="anonymous"
+    ></script>
     <style>
       .adlam-display {
         font-family: "ADLaM Display", serif;
@@ -29,11 +34,364 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              "primary-btn": "#FFDC26",
+              "primary-cover": "#FFF9F4",
             },
           },
         },
       };
     </script>
   </head>
-  <body class="adlam-display"></body>
+  <body class="">
+    <!-- navbar -->
+    <header>
+      <div class="bg-primary-cover">
+        <nav class="md:container mx-auto">
+          <div class="navbar bg-primary-cover border-2 lg:border-0">
+            <div class="navbar-start">
+              <img src="c1-assets/logo-header.png" alt="" />
+              <a class="text-2xl text-black hidden lg:flex">Browse4Pets</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-xl text-black">
+                <li><a>Find a pet</a></li>
+                <li><a>Breeds</a></li>
+                <li><a>Contact us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end space-x-3 items-center hidden lg:flex">
+              <i class="fa-regular fa-bell"></i>
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <button class="btn w-24 h-10 rounded-md border-amber-400">
+                Login
+              </button>
+              <button
+                class="btn w-24 h-10 rounded-md bg-primary-btn text-black"
+              >
+                Register
+              </button>
+            </div>
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <!-- navbar end -->
+      <!-- Hero section -->
+      <section class="md:container mx-auto">
+        <div class="">
+          <div
+            class="bg-no-repeat h-[870px] bg-cover flex flex-col"
+            style="background-image: url(./c1-assets/cat-big.png)"
+          >
+            <div class="">
+              <div class="">
+                <div class="text-black mt-20">
+                  <h1 class="mb-10 text-6xl adlam-display">
+                    Pamper Your Pet,<br />
+                    Because They Deserve <br />
+                    the Bes
+                  </h1>
+                  <p class="mb-5">
+                    Discover a world of treats, toys, and essentials handpicked
+                    for
+                    <br />
+                    your furry friends. Shop now and make tails wag with joy!
+                  </p>
+                  <button class="bg-primary-btn w-24 h-10 rounded-md">
+                    Find a pet
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Hero end -->
+    </header>
+    <main class="md:container mx-auto">
+      <!-- Browse By Categories section -->
+      <section class="mt-20 mb-20">
+        <h2 class="text-4xl mb-14 adlam-display">Browse By Categories</h2>
+        <div class="">
+          <div class="grid grid-cols-6">
+            <div class="card bg-[#F9DF8A] w-48 shadow-xl">
+              <figure class="px-10 pt-10">
+                <div class="avatar">
+                  <div class="w-24 bg-white rounded-full">
+                    <div class="w-10 mx-auto mt-6">
+                      <img src="./c1-assets/dog-cartoon.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title adlam-display">Dog</h2>
+                <p>3 items</p>
+                <div class="card-actions"></div>
+              </div>
+            </div>
+            <div class="card bg-[#F9DF8A] w-48 shadow-xl">
+              <figure class="px-10 pt-10">
+                <div class="avatar">
+                  <div class="w-24 bg-white rounded-full">
+                    <div class="w-10 mx-auto mt-6">
+                      <img src="./c1-assets/fish-cartoon.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title adlam-display">Fish</h2>
+                <p>3 items</p>
+                <div class="card-actions"></div>
+              </div>
+            </div>
+            <div class="card bg-[#F9DF8A] w-48 shadow-xl">
+              <figure class="px-10 pt-10">
+                <div class="avatar">
+                  <div class="w-24 bg-white rounded-full">
+                    <div class="w-10 mx-auto mt-6">
+                      <img src="./c1-assets/cat-cartoon.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title adlam-display">Cat</h2>
+                <p>3 items</p>
+                <div class="card-actions"></div>
+              </div>
+            </div>
+            <div class="card bg-[#F9DF8A] w-48 shadow-xl">
+              <figure class="px-10 pt-10">
+                <div class="avatar">
+                  <div class="w-24 bg-white rounded-full">
+                    <div class="w-10 mx-auto mt-6">
+                      <img src="./c1-assets/bird-cartoon.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title adlam-display">Bieds</h2>
+                <p>3 items</p>
+                <div class="card-actions"></div>
+              </div>
+            </div>
+            <div class="card bg-[#F9DF8A] w-48 shadow-xl">
+              <figure class="px-10 pt-10">
+                <div class="avatar">
+                  <div class="w-24 bg-white rounded-full">
+                    <div class="w-10 mx-auto mt-6">
+                      <img src="./c1-assets/mouse-cartoon.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title adlam-display">Small pet</h2>
+                <p>3 items</p>
+                <div class="card-actions"></div>
+              </div>
+            </div>
+            <div class="card bg-[#F9DF8A] w-48 shadow-xl">
+              <figure class="px-10 pt-10">
+                <div class="avatar">
+                  <div class="w-24 bg-white rounded-full">
+                    <div class="w-10 mx-auto mt-6">
+                      <img src="./c1-assets/rabbit-cartoon.png" alt="" />
+                    </div>
+                  </div>
+                </div>
+              </figure>
+              <div class="card-body items-center text-center">
+                <h2 class="card-title adlam-display">Rabit</h2>
+                <p>3 items</p>
+                <div class="card-actions"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Browse By Categories section end -->
+    <!-- Trending pet products -->
+    <section class="bg-primary-cover">
+      <div class="md:container mx-auto">
+        <h3 class="text-4xl mb-14 adlam-display">Trending Pet Products</h3>
+        <div class="flex gap-5">
+          <div class="w-1/3 p-5 bg-[#F9DF8A] px-12 pt-16 rounded-2xl relative">
+            <h3 class="text-3xl adlam-display">T-Shirt For Dogs</h3>
+            <p class="mb-10">
+              Discover a worlo of treats,toys,and <br />
+              essents hundpicked for
+            </p>
+            <button class="bg-white px-8 py-2 rounded-lg">Shop Now</button>
+            <div class="flex mr-2 ml-auto absolute right-2 bottom-0">
+              <img class="w-66" src="./c1-assets/cute-pet-small.png" alt="" />
+            </div>
+          </div>
+          <div class="grid grid-cols-3 gap-8">
+            <!-- card -->
+            <div
+              class="flex items-center w-72 bg-white shadow-lg px-2 py-2 rounded-lg"
+            >
+              <!-- icon -->
+              <div class="w-24 h-24 bg-primary-cover">
+                <div class="mx-auto mt-5 ml-5">
+                  <img src="./c1-assets/dog-cartoon.png" alt="" />
+                </div>
+              </div>
+              <!-- text -->
+              <div class="ml-2">
+                <i class="fa-solid fa-star text-amber-500"> 4.5</i>
+                <h2 class="lg:text-2xl font-bold">Pet Bed</h2>
+                <p class="font-bold">$39.99</p>
+              </div>
+            </div>
+            <!-- card -->
+            <div
+              class="flex items-center w-72 bg-white shadow-lg px-2 py-2 rounded-lg"
+            >
+              <!-- icon -->
+              <div class="w-24 h-24 bg-primary-cover">
+                <div class="mx-auto mt-5 ml-5">
+                  <img src="./c1-assets/dog-cartoon.png" alt="" />
+                </div>
+              </div>
+              <!-- text -->
+              <div class="ml-2">
+                <i class="fa-solid fa-star text-amber-500"> 4.5</i>
+                <h2 class="lg:text-2xl font-bold">Pet Bed</h2>
+                <p class="font-bold">$39.99</p>
+              </div>
+            </div>
+            <!-- card -->
+            <div
+              class="flex items-center w-72 bg-white shadow-lg px-2 py-2 rounded-lg"
+            >
+              <!-- icon -->
+              <div class="w-24 h-24 bg-primary-cover">
+                <div class="mx-auto mt-5 ml-5">
+                  <img src="./c1-assets/dog-cartoon.png" alt="" />
+                </div>
+              </div>
+              <!-- text -->
+              <div class="ml-2">
+                <i class="fa-solid fa-star text-amber-500"> 4.5</i>
+                <h2 class="lg:text-2xl font-bold">Pet Bed</h2>
+                <p class="font-bold">$39.99</p>
+              </div>
+            </div>
+            <!-- card -->
+            <div
+              class="flex items-center w-72 bg-white shadow-lg px-2 py-2 rounded-lg"
+            >
+              <!-- icon -->
+              <div class="w-24 h-24 bg-primary-cover">
+                <div class="mx-auto mt-5 ml-5">
+                  <img src="./c1-assets/dog-cartoon.png" alt="" />
+                </div>
+              </div>
+              <!-- text -->
+              <div class="ml-2">
+                <i class="fa-solid fa-star text-amber-500"> 4.5</i>
+                <h2 class="lg:text-2xl font-bold">Pet Bed</h2>
+                <p class="font-bold">$39.99</p>
+              </div>
+            </div>
+            <!-- card -->
+            <div
+              class="flex items-center w-72 bg-white shadow-lg px-2 py-2 rounded-lg"
+            >
+              <!-- icon -->
+              <div class="w-24 h-24 bg-primary-cover">
+                <div class="mx-auto mt-5 ml-5">
+                  <img src="./c1-assets/dog-cartoon.png" alt="" />
+                </div>
+              </div>
+              <!-- text -->
+              <div class="ml-2">
+                <i class="fa-solid fa-star text-amber-500"> 4.5</i>
+                <h2 class="lg:text-2xl font-bold">Pet Bed</h2>
+                <p class="font-bold">$39.99</p>
+              </div>
+            </div>
+            <!-- card -->
+            <div
+              class="flex items-center w-72 bg-white shadow-lg px-2 py-2 rounded-lg"
+            >
+              <!-- icon -->
+              <div class="w-24 h-24 bg-primary-cover">
+                <div class="mx-auto mt-5 ml-5">
+                  <img src="./c1-assets/dog-cartoon.png" alt="" />
+                </div>
+              </div>
+              <!-- text -->
+              <div class="ml-2">
+                <i class="fa-solid fa-star text-amber-500"> 4.5</i>
+                <h2 class="lg:text-2xl font-bold">Pet Bed</h2>
+                <p class="font-bold">$39.99</p>
+              </div>
+            </div>
+            <!-- card -->
+            <div
+              class="flex items-center w-72 bg-white shadow-lg px-2 py-2 rounded-lg"
+            >
+              <!-- icon -->
+              <div class="w-24 h-24 bg-primary-cover">
+                <div class="mx-auto mt-5 ml-5">
+                  <img src="./c1-assets/dog-cartoon.png" alt="" />
+                </div>
+              </div>
+              <!-- text -->
+              <div class="ml-2">
+                <i class="fa-solid fa-star text-amber-500"> 4.5</i>
+                <h2 class="lg:text-2xl font-bold">Pet Bed</h2>
+                <p class="font-bold">$39.99</p>
+              </div>
+            </div>
+            <!-- card -->
+            <div
+              class="flex items-center w-72 bg-white shadow-lg px-2 py-2 rounded-lg"
+            >
+              <!-- icon -->
+              <div class="w-24 h-24 bg-primary-cover">
+                <div class="mx-auto mt-5 ml-5">
+                  <img src="./c1-assets/dog-cartoon.png" alt="" />
+                </div>
+              </div>
+              <!-- text -->
+              <div class="ml-2">
+                <i class="fa-solid fa-star text-amber-500"> 4.5</i>
+                <h2 class="lg:text-2xl font-bold">Pet Bed</h2>
+                <p class="font-bold">$39.99</p>
+              </div>
+            </div>
+            <!-- card -->
+            <div
+              class="flex items-center w-72 bg-white shadow-lg px-2 py-2 rounded-lg"
+            >
+              <!-- icon -->
+              <div class="w-24 h-24 bg-primary-cover">
+                <div class="mx-auto mt-5 ml-5">
+                  <img src="./c1-assets/dog-cartoon.png" alt="" />
+                </div>
+              </div>
+              <!-- text -->
+              <div class="ml-2">
+                <i class="fa-solid fa-star text-amber-500"> 4.5</i>
+                <h2 class="lg:text-2xl font-bold">Pet Bed</h2>
+                <p class="font-bold">$39.99</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
